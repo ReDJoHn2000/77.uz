@@ -33,6 +33,7 @@ main {
   border-radius: 12px;
   background: #fff;
   display: flex;
+  flex-direction: column;
   padding: 16px;
 }
 

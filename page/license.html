@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>77.uz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="x-icon" href="/assets/icons/favicon.webp" />
+    <link rel="stylesheet" href="/style/index.css" />
+    <link rel="stylesheet" href="/style/login-form.css" />
+    <link rel="stylesheet" href="/style/submit-form.css" />
+    <link rel="stylesheet" href="/style/license.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container"> 
+        <!-- Start of the navigation menu -->
+        <nav class="navigation">
+          <div class="navigation__left-menu">
+            <div class="navigation__dropdown-lang-menu">
+              <button class="navigation__btn-lang">
+                <img
+                  class="navigation__flag-image"
+                  src="/assets/icons/russian-flag.svg"
+                  alt="Russian Flag"
+                />Русский
+                <img src="/assets/icons/down-arrow.svg" alt="down-arrow" />
+              </button>
+              <div class="navigation__lang-list">
+                <a class="navigation__lang" href="#">
+                  <img
+                    class="navigation__flag-image"
+                    src="/assets/icons/uz.svg"
+                    alt="Russian Flag"
+                  />O'zbekcha
+                </a>
+                <div class="navigation__list-divider"></div>
+                <a class="navigation__lang" href="#"
+                  ><img
+                    class="navigation__flag-image"
+                    src="/assets/icons/russian-flag.svg"
+                    alt="Uzbekistan Flag"
+                  />Русский</a
+                >
+                <div class="navigation__list-divider"></div>
+                <a class="navigation__lang" href="#"
+                  ><img
+                    class="navigation__flag-image"
+                    src="/assets/icons/us.svg"
+                    alt="USA Flag"
+                  />English</a
+                >
+              </div>
+            </div>
+            <div class="navigation__contact-menu">
+              <a class="navigation__contact-number" href="tell:+998 88 500 50 00"
+                ><img src="/assets/icons/phone.svg" alt="phone logo" />+998 88
+                500 50 00</a
+              >
+            </div>
+          </div>
+          <div class="navigation__logo">
+            <a href="#"
+              ><img src="/assets/icons/logo.svg" alt="image of logo"
+            /></a>
+          </div>
+          <div class="navigation__right-menu">
+            <div class="navigation__favourites">
+              <a class="navigation__favourites-menu" href="/page/favourites.html" target="_blank"
+                ><img
+                  src="/assets/icons/heart.svg"
+                  alt="heart logo"
+                />Избранные</a
+              >
+            </div>
+            <div class="navigation__divider"></div>
+              <button class="navigation__login-btn">
+                Войти
+                <img src="/assets/icons/login-icon.svg" alt="login logo" />
+              </button>
+            </div>
+          </div>
+        </nav>
+        <!-- End of the navigation -->
+      </div>
+    </header>
+    <div class="navigation__form-container"></div>
+    <div class="navigation__popup">
+
+      <div class="navigation__login-form">
+        <div class="navigation__title-login">
+          <h1 class="navigation__title-h1">Добро пожаловать!</h1>
+          <button class="navigation__close-btn">
+            <img
+              src="/assets/login-form/close-btn-icon.svg"
+              alt="close-btn-icon"
+            />
+          </button>
+        </div>
+
+        <p class="navigation__title-discription">
+          Войти в систему чтобы торговать в системе
+        </p>
+
+        <div class="navigation__input">
+          <div class="navigation__input-login">
+            <label class="navigation__username-password" for="username"
+              ><b>Логин</b></label
+            >
+            <input
+            id="username"
+              class="navigation__input-usr-psw"
+              type="text"
+              placeholder="Введите логин"
+              name="username"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="navigation__input-login">
+            <label class="navigation__username-password" for="password"
+              ><b>Пароль</b></label
+            >
+            <input
+            id="password"
+              class="navigation__input-usr-psw"
+              type="password"
+              placeholder="Введите пароль"
+              name="password"
+              autocomplete="off"
+              required
+            />
+
+            <a class="navigation__forgot" href="#">Забыли пароль?</a>
+          </div>
+        </div>
+        <div class="navigation__login-submit">
+          <button class="navigation__btn_login" type="submit">Войти</button>
+
+          <div class="navigation__diverder-body">
+            <div class="navigation__devider"></div>
+            <p class="navigation__devider-text">Хотите стать продавцом?</p>
+            <div class="navigation__devider"></div>
+          </div>
+
+          <button class="navigation__btn_submit" type="submit">
+            Подать заявку
+          </button>
+        </div>
+      </div>
+        <!-- end of the login-from -->
+      <!-- A submit popup form -->
+      <div class="navigation__submit-form">
+        <div class="navigation__title-submit">
+          <h1 class="navigation__submit-h1">Подать заявку</h1>
+          <button class="navigation__close-btn-submit">
+            <img
+              src="/assets/login-form/close-btn-icon.svg"
+              alt="close-btn-icon"
+            />
+          </button>
+        </div>
+  
+        <p class="navigation__title-discription-submit">
+          Войти в систему чтобы торговать в системе
+        </p>
+  
+        <div class="navigation__input-submit">
+          <div class="navigation__input-login-submit">
+            <label class="navigation__username-password" for="name"
+              ><b>Ф.И.О.</b></label
+            >
+            <input
+              class="navigation__input-usr-psw"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Введите вашу Ф.И.О."
+              autocomplete="off"
+              required
+            />
+          </div>
+  
+          <div class="navigation__input-submit">
+            <label class="navigation__username-password" for="product-name"
+              ><b>Название продукта</b></label
+            >
+            <input
+              class="navigation__input-usr-psw"
+              id="product-name"
+              name="product-name"
+              type="text"
+              placeholder="Введите название продукта"
+              autocomplete="off"
+              required
+            />
+          </div>
+  
+          <div class="navigation__input-submit">
+            <label class="navigation__username-password" for="product-name"
+              ><b>Категория</b></label
+            >
+            <select class="navigation__select" id="category" name="category">
+              <option value="" disabled selected hidden>
+                Выберите категорию
+              </option>
+              <option value="для женщин">Для женщин</option>
+              <option value="красота">Красота</option>
+              <option value="бытовая техника">Бытовая техника</option>
+              <option value="для мужчин">Для мужчин</option>
+              <option value="здоровье">Здоровье</option>
+              <option value="электроника">Электроника</option>
+              <option value="детские товары">Детские товары</option>
+              <option value="украшения и бижутерия">Украшения и бижутерия</option>
+              <option value="домашняя утварь">Домашняя утварь</option>
+              <option value="обувь">Обувь</option>
+              <option value="канцелярия">Канцелярия</option>
+              <option value="спорт и отдых">Спорт и отдых</option>
+              <option value="автотовары">Автотовары</option>
+              <option value="новые легковые автомобили">
+                Новые легковые автомобили
+              </option>
+              <option value="мототранспорт">Мототранспорт</option>
+              <option value="дача, сады и огороды">Дача, сады и огороды</option>
+              <option value="личная гигиена">Личная гигиена</option>
+              <option value="аксессуарлар">Аксессуарлар</option>
+              <option value="бытовая химия и личная гигиена">
+                Бытовая химия и личная гигиена
+              </option>
+              <option value="строительство и ремонт">
+                Строительство и ремонт
+              </option>
+              <option value="сумки и чемоданы">Сумки и чемоданы</option>
+            </select>
+          </div>
+  
+          <div class="navigation__input-submit">
+            <label class="navigation__username-password" for="tel"
+              ><b>Телефон номер</b></label
+            >
+            <div class="navigation__prefix">
+              <span class="navigation__telephone">+998</span>
+              <input
+                class="navigation__input-num"
+                id="tel"
+                name="tel"
+                type="tel"
+                min="2.2"
+                max="11"
+                step="2.2"
+                placeholder="(__)___-__-__"
+                autocomplete="off"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="navigation__login-submit">
+          <button class="navigation__btn_sub-login" type="submit">
+            Продолжить
+          </button>
+  
+          <div class="navigation__diverder-body">
+            <div class="navigation__devider-submit"></div>
+            <p class="navigation__devider-text-submit">
+              Если вы продавец, войдите на платформу
+            </p>
+            <div class="navigation__devider-submit"></div>
+          </div>
+  
+          <button class="navigation__btn_sub-submit" type="submit">Войти</button>
+        </div>
+      </div>
+      
+  </div>
+    <!-- end of submit -->
+    <main>
+        <div class="container">
+            <div class="license">
+                <h1 class="license__title">Условия пользования</h1>
+                <div class="license__text">
+                    <h2 class="license__sub-title">В 77.uz мы ценим и уважаем вашу частную жизнь. В этой политике конфиденциальности описываются типы личной информации, которую мы собираем, как мы используем и защищаем эту информацию, а также ваши права в отношении ваших персональных данных, когда вы посещаете наш веб-сайт или пользуетесь нашими услугами. Получая доступ к 77.uz или используя его, вы соглашаетесь с методами, описанными в настоящей Политике конфиденциальности.</h2>
+                      <p class="license__title-text">Информация, которую мы собираем:</p>
+                      <p class="license__sub-text">1.1 Личная информация: Мы можем собирать личную информацию, такую как ваше имя, адрес электронной почты, контактные данные и другую соответствующую информацию, которую вы добровольно предоставляете нам при регистрации, совершении покупки, подписке на нашу рассылку новостей или взаимодействии с нашим веб-сайтом.</br>
+                      1.2 Информация об использовании: Мы собираем неличную информацию о вашем взаимодействии с нашим веб-сайтом, такую как ваш IP-адрес, тип браузера, операционная система, информация об устройстве и посещенных страницах. Эта информация помогает нам анализировать тенденции, администрировать сайт и улучшать пользовательский опыт.</p>
+                      <p class="license__title-text">Использование собранной информации:</p>
+                      <p class="license__sub-text">2.1 Предоставление услуг: Мы используем собранную информацию для предоставления запрашиваемых вами услуг, таких как обработка бронирований, предоставление поддержки клиентов и предоставление соответствующей информации о наших продуктах, рекламных акциях и обновлениях.</br>
+                      2.2 Улучшение пользовательского опыта: Мы можем использовать информацию для персонализации вашего опыта, понимания предпочтений пользователей, оптимизации нашего веб-сайта и предложения индивидуального контента, рекомендаций и рекламы, основанных на ваших интересах.</br> 2.3 Связь: Мы можем связаться с вами по электронной почте или другим каналам связи, чтобы ответить на запросы, оказать помощь или проинформировать вас о важных обновлениях, предложениях и рекламных акциях, связанных с 77.uz. У вас есть возможность отказаться от подписки на рекламные сообщения в любое время.</p>
+                      <p class="license__title-text">Обмен данными и их раскрытие:</p>
+                      <p class="license__sub-text">3.1 Сторонние поставщики услуг: Мы можем привлекать доверенных сторонних поставщиков услуг для выполнения определенных функций от нашего имени, таких как обработка платежей, анализ данных или предоставление маркетинговых сообщений. Эти поставщики имеют доступ к личной информации исключительно для выполнения своих задач и должны защищать данные в соответствии с применимым законодательством.</br>
+                      3.2 Требования законодательства: Мы можем раскрывать личную информацию, если этого требует закон, нормативные акты, судебный процесс или запрос правительства. Мы также можем обеспечивать соблюдение наших условий предоставления услуг и расследовать потенциальные нарушения, мошенничество или проблемы безопасности.</p>
+                      <p class="license__title-text">Безопасность данных:</p>
+                      <p class="license__sub-text">Мы принимаем разумные меры для защиты вашей личной информации от несанкционированного доступа, раскрытия, изменения или уничтожения. Однако, пожалуйста, обратите внимание, что ни один способ передачи или хранения данных через Интернет не является на 100% безопасным. Таким образом, мы не можем гарантировать абсолютную безопасность ваших данных, и вы предоставляете информацию на свой страх и риск.</p>
+                      <p class="license__title-text">Ваши права:</p>
+                      <p class="license__sub-text">Вы имеете право получать доступ, обновлять, исправлять и удалять вашу личную информацию, хранящуюся в 77.uz. Вы можете воспользоваться этими правами, связавшись с нами, используя контактные данные, указанные ниже. Мы приложим разумные усилия, чтобы оперативно реагировать на ваши запросы, с учетом любых юридических обязательств или законных интересов.</p>
+                      <p class="license__title-text">Файлы cookie и технологии отслеживания:</p>
+                      <p class="license__sub-text">Мы используем файлы cookie и аналогичные технологии отслеживания для улучшения вашего удобства просмотра, анализа моделей использования и сбора статистической информации. Вы можете управлять своими предпочтениями в отношении файлов cookie через настройки своего браузера, хотя отключение файлов cookie может ограничить определенную функциональность нашего веб-сайта.</p>
+                      <p class="license__title-text">Ссылки на сторонние веб-сайты:</p>
+                      <p class="license__sub-text">Наш веб-сайт может содержать ссылки на внешние веб-сайты или сервисы, которые не управляются и не контролируются 77.uz. Настоящая Политика конфиденциальности не распространяется на действия этих сторонних веб-сайтов, и мы рекомендуем вам ознакомиться с их соответствующими политиками конфиденциальности.</p>
+                      <p class="license__title-text">Неприкосновенность частной жизни детей:</p>
+                      <p class="license__sub-text">77.uz сознательно не собирает и не хранит личную информацию от лиц младше 18 лет. Если нам станет известно, что мы собрали личную информацию от ребенка без согласия родителей, мы предпримем шаги по удалению этой информации из наших систем.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__icon">
+            <img class="footer__icon-img" src="/assets/icons/logo.svg" alt="company logo">
+          </div>
+            <h3 class="footer__content-discription">77.uz marketplace - это виртуальная платформа в Узбекистане, которая облегчает покупки и продажи, связывая продавцов с потенциальными клиентами.</h3>
+            <div class="footer__company-services">
+              <a class="footer__service" href="#" target="_blank"><img src="/assets/icons/footer-symbol.svg" alt="symbol">Доска объявлений</a>
+              <a class="footer__service" href="#" target="_blank"><img src="/assets/icons/footer-symbol.svg" alt="symbol">Условия пользования</a>
+              <a class="footer__service" href="#" target="_blank "><img src="/assets/icons/footer-symbol.svg" alt="symbol">+998 88 500 50 00</a>
+            </div>
+            <div class="footer__footer-line">
+              <div class="footer__footer-line-left">
+                <div class="footer__text">© 77.uz</div>
+                <a href="/page/license.html" class="footer__text">2023. Все права защищены</a>
+              </div>
+              <div class="footer__footer-line-right">
+                <a href="https://uic.group/" target="_blank"><img src="/assets/icons/footer-group-icon.svg" alt="company group icon"></a>
+                <a href="https://uic.group/" class="footer__group-icon" target="_blank"><img src="/assets/icons/footer-group-icon2.svg" alt="company group icon"></a>
+              </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/main/main.js"></script>
+  </body>
+</html>
