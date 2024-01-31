@@ -58,7 +58,7 @@
               </div>
             </div>
             <div class="navigation__contact-menu">
-              <a class="navigation__contact-number" href="tell:+998 88 500 50 00"
+              <a class="navigation__contact-number" href="https://+998-88-500-50-00" target="_blank"
                 ><img src="/assets/icons/phone.svg" alt="phone logo" />+998 88
                 500 50 00</a
               >
@@ -90,6 +90,7 @@
       </div>
     </header>
     <!-- A popup login form  -->
+
     <div class="navigation__form-container"></div>
     <div class="navigation__popup">
 
@@ -282,16 +283,19 @@
   </div>
     <!-- end of submit -->
     <!-- Head ends here and starts the hero section -->
+    
     <main class="main">
       <section class="container">
         <div class="hero">
+          <div id="hero__blur"></div>
           <div class="hero__search-bar">
             <img
               class="hero__search-bar-icon"
               src="/assets/icons/search-icon.svg"
               alt="search-icon"
             />
-            <input type="text" placeholder="Что вы ищите?" name="search"/>
+            
+            <input class="hero__input" onfocus="onFocus()" onfocusout="onFocusOut()" type="text" placeholder="Что вы ищите?" name="search"/>
             <button class="hero__btn">Поиск</button>
           </div>
           <div class="hero__content">
@@ -1109,5 +1113,6 @@
         </div>
     </footer>
     <script src="/main/main.js"></script>
+    <script src="/main/search-bar.js"></script>
   </body>
 </html>
