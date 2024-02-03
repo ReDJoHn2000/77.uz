@@ -26,15 +26,18 @@
 main {
   padding-top: 20px;
   display: flex;
+  align-items: baseline;
   gap: 24px;
 }
 
 .filtration {
+  width: 370px;
   border-radius: 12px;
   background: #fff;
   display: flex;
   flex-direction: column;
   padding: 16px;
+  gap: 20px;
 }
 
 .filtration__title {
@@ -46,10 +49,155 @@ main {
   line-height: 1.3;
 }
 
+.filtration__checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.filtration__text {
+  color: #63676c;
+  font-size: 14px;
+  list-style: 20px;
+  font-weight: medium;
+}
+
+.filtration__categories {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .product-list {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.filtration__selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px;
+  border-radius: 8px;
+  border: 1px solid #eaedf0;
+  outline: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filtration__categories-arrow {
+  width: 20px;
+  height: 20px;
+}
+
+.filtration__group {
+  padding: 5px 0 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filtration__input[type="checkbox"] {
+  display: none;
+}
+
+.filtration__label {
+  position: relative;
+  padding-left: 30px;
+  width: 100%;
+}
+
+.filtration__label-subcategories {
+  position: relative;
+  padding-left: 30px;
+  width: 100%;
+}
+
+.filtration__label::before {
+  content: "";
+  background: url(/assets/customized/circle-tick.webp);
+  background-position: center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+
+  transform: scale(0);
+  transition: all 0.2s;
+}
+
+.filtration__label-subcategories::before {
+  content: "";
+  background: url(/assets/customized/square-tick.webp);
+  background-position: center;
+  background-size: contain;
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+  position: absolute;
+  left: -13px;
+  top: -10.5px;
+
+  transform: scale(0);
+  transition: all 0.2s;
+}
+
+.filtration__input[type="checkbox"]:checked + .filtration__label::before {
+  transform: scale(1);
+}
+
+.filtration__input[type="checkbox"]:checked
+  + .filtration__label-subcategories::before {
+  transform: scale(1);
+}
+
+.filtration__label::after {
+  content: "";
+  border: 1px solid #eaedf0;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  border-radius: 50%;
+}
+
+.filtration__label-subcategories::after {
+  content: "";
+  border: 1px solid #eaedf0;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  border-radius: 8px;
+}
+
+.filtration__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 49px;
+  border: none;
+  border-radius: 8px;
+  background-color: #388ff3;
+  color: white;
+  font-size: 16px;
+}
+
+.filtration__btn:hover {
+  cursor: pointer;
+  background-color: #286ebe;
 }
 
 .product-list__title {
@@ -68,6 +216,13 @@ main {
   padding-top: 12px;
 }
 
+.product-list__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
 .product-list__numOfProducts {
   color: #8e9297;
   font-family: Inter;
@@ -78,9 +233,43 @@ main {
 }
 
 .product-list__list {
+  max-width: 880px;
   padding-top: 24px;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  grid-template-columns: repeat(3, 200px);
-  grid-template-rows: repeat(4, 470px);
+  justify-content: center;
+}
+
+.checkbox_divider {
+  margin-left: 30px;
+  width: 94.5%;
+  height: 1px;
+  background-color: #eaedf0;
+}
+
+@media (max-width: 390px) {
+  .filtration {
+    display: none;
+  }
+
+  .product-list__list {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .product-list__numOfProducts {
+    margin-top: -15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .filtration {
+    display: none;
+  }
+
+  .product-list__list {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
 }

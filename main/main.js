@@ -4,6 +4,7 @@ const submitBtn = document.querySelector(".navigation__btn_submit");
 const submitPopup = document.querySelector(".navigation__submit-form");
 const submitCloseBtn = document.querySelector(".navigation__close-btn-submit");
 const submitLoginBtn = document.querySelector(".navigation__btn_sub-submit");
+const loginBtnImg = document.querySelector(".navigation__btn_login-img");
 
 // to show the login page
 loginBtn.addEventListener("click", () => {
@@ -24,4 +25,8 @@ submitCloseBtn.addEventListener("click", () => {
 
 submitLoginBtn.addEventListener("click", () => {
   submitPopup.classList.remove("show-form-submit");
+});
+
+loginBtnImg.addEventListener("click", () => {
+  loginBtn.click();
 });

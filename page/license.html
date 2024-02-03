@@ -59,37 +59,44 @@
               </div>
             </div>
             <div class="navigation__contact-menu">
-              <a class="navigation__contact-number" href="tell:+998 88 500 50 00"
+              <a class="navigation__contact-number" href="https://+998-88-500-50-00" target="_blank"
                 ><img src="/assets/icons/phone.svg" alt="phone logo" />+998 88
                 500 50 00</a
               >
             </div>
           </div>
           <div class="navigation__logo">
-            <a href="/index.html"
-              ><img src="/assets/icons/logo.svg" alt="image of logo"
+            <a href="/index.html" target="_self"
+              ><img class="navigation__img" src="/assets/icons/logo.svg" alt="image of logo"
             /></a>
           </div>
           <div class="navigation__right-menu">
             <div class="navigation__favourites">
+              <a class="navigation__favourites-icon" href="/page/favourites.html">
+                <img
+                src="/assets/icons/heart.svg"
+                alt="heart logo"
+                />
+              </a>
               <a class="navigation__favourites-menu" href="/page/favourites.html" target="_blank"
-                ><img
-                  src="/assets/icons/heart.svg"
-                  alt="heart logo"
-                />Избранные</a
+              >
+                Избранные</a
               >
             </div>
             <div class="navigation__divider"></div>
+            <div class="navigation__login-btn-icon">
               <button class="navigation__login-btn">
                 Войти
-                <img src="/assets/icons/login-icon.svg" alt="login logo" />
               </button>
+                <img class="navigation__btn_login-img" src="/assets/icons/login-icon.svg" alt="login logo" />
             </div>
           </div>
         </nav>
         <!-- End of the navigation -->
       </div>
     </header>
+    <!-- A popup login form  -->
+
     <div class="navigation__form-container"></div>
     <div class="navigation__popup">
 
@@ -144,7 +151,7 @@
         <div class="navigation__login-submit">
           <button class="navigation__btn_login" type="submit">Войти</button>
 
-          <div class="navigation__diverder-body">
+          <div class="navigation__divirder-body">
             <div class="navigation__devider"></div>
             <p class="navigation__devider-text">Хотите стать продавцом?</p>
             <div class="navigation__devider"></div>
@@ -279,7 +286,7 @@
         </div>
       </div>
       
-  </div>
+  </div> 
     <!-- end of submit -->
     <main>
         <div class="container">
@@ -310,29 +317,34 @@
             </div>
         </div>
     </main>
+    <!-- Footer section -->
     <footer class="footer">
-        <div class="footer__content">
-          <div class="footer__icon">
-            <a href="/index.html"><img class="footer__icon-img" src="/assets/icons/logo.svg" alt="company logo"></a>
-          </div>
-            <h3 class="footer__content-discription">77.uz marketplace - это виртуальная платформа в Узбекистане, которая облегчает покупки и продажи, связывая продавцов с потенциальными клиентами.</h3>
-            <div class="footer__company-services">
-              <a class="footer__service" href="#" target="_blank"><img src="/assets/icons/footer-symbol.svg" alt="symbol">Доска объявлений</a>
-              <a class="footer__service" href="#" target="_blank"><img src="/assets/icons/footer-symbol.svg" alt="symbol">Условия пользования</a>
-              <a class="footer__service" href="#" target="_blank "><img src="/assets/icons/footer-symbol.svg" alt="symbol">+998 88 500 50 00</a>
-            </div>
-            <div class="footer__footer-line">
-              <div class="footer__footer-line-left">
-                <div class="footer__text">© 77.uz</div>
-                <a href="/page/license.html" class="footer__text">2023. Все права защищены</a>
-              </div>
-              <div class="footer__footer-line-right">
-                <a href="https://uic.group/" target="_blank"><img src="/assets/icons/footer-group-icon.svg" alt="company group icon"></a>
-                <a href="https://uic.group/" class="footer__group-icon" target="_blank"><img src="/assets/icons/footer-group-icon2.svg" alt="company group icon"></a>
-              </div>
-            </div>
+      <div class="footer__content">
+        <div class="footer__icon">
+          <a href="/index.html" target="_self">
+
+            <img class="footer__icon-img" src="/assets/icons/logo.svg" alt="company logo">
+          </a>
         </div>
-    </footer>
-    <script src="/main/main.js"></script>
+          <h3 class="footer__content-discription">77.uz marketplace - это виртуальная платформа в Узбекистане, которая облегчает покупки и продажи, связывая продавцов с потенциальными клиентами.</h3>
+          <div class="footer__company-services">
+            <a class="footer__service" href="#" target="_blank"><img src="/assets/icons/footer-symbol.svg" alt="symbol">Доска объявлений</a>
+            <a class="footer__service" href="/page/license.html" target="_blank"><img src="/assets/icons/footer-symbol.svg" alt="symbol">Условия пользования</a>
+            <a class="footer__service" href="#" target="_blank "><img src="/assets/icons/footer-symbol.svg" alt="symbol">+998 88 500 50 00</a>
+          </div>
+          <div class="footer__footer-line">
+            <div class="footer__footer-line-left">
+              <div class="footer__text">© 77.uz</div>
+              <a href="/page/license.html" class="footer__text" target="_blank">2023. Все права защищены</a>
+            </div>
+            <div class="footer__footer-line-right">
+              <a href="https://uic.group/" target="_blank"><img src="/assets/icons/footer-group-icon.svg" alt="company group icon"></a>
+              <a href="https://uic.group/" class="footer__group-icon" target="_blank"><img src="/assets/icons/footer-group-icon2.svg" alt="company group icon"></a>
+            </div>
+          </div>
+      </div>
+  </footer>
+  <script src="/main/main.js"></script>
+  <script src="/main/search-bar.js"></script>
   </body>
 </html>

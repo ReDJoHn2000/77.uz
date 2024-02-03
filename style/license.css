@@ -38,3 +38,13 @@
   line-height: 20px;
   padding-bottom: 10px;
 }
+
+@media (max-width: 390px) {
+  .license {
+    padding: 20px;
+  }
+
+  .license__title {
+    font-size: 12px;
+  }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,10 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" type="x-icon" href="/assets/icons/favicon.webp" />
-    <link rel="stylesheet" href="/style/index.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.webp" />
+    <link rel="stylesheet" href="../style/index.css" />
     <link rel="stylesheet" href="/style/login-form.css" />
     <link rel="stylesheet" href="/style/submit-form.css" />
+    <link rel="stylesheet" href="/style/responsive.css" />
   </head>
   <body>
     <!-- Header -->
@@ -66,23 +67,28 @@
           </div>
           <div class="navigation__logo">
             <a href="/index.html" target="_self"
-              ><img src="/assets/icons/logo.svg" alt="image of logo"
+              ><img class="navigation__img" src="/assets/icons/logo.svg" alt="image of logo"
             /></a>
           </div>
           <div class="navigation__right-menu">
             <div class="navigation__favourites">
+              <a class="navigation__favourites-icon" href="/page/favourites.html">
+                <img
+                src="/assets/icons/heart.svg"
+                alt="heart logo"
+                />
+              </a>
               <a class="navigation__favourites-menu" href="/page/favourites.html" target="_blank"
-                ><img
-                  src="/assets/icons/heart.svg"
-                  alt="heart logo"
-                />Избранные</a
+              >
+                Избранные</a
               >
             </div>
             <div class="navigation__divider"></div>
+            <div class="navigation__login-btn-icon">
               <button class="navigation__login-btn">
                 Войти
-                <img src="/assets/icons/login-icon.svg" alt="login logo" />
               </button>
+                <img class="navigation__btn_login-img" src="/assets/icons/login-icon.svg" alt="login logo" />
             </div>
           </div>
         </nav>
@@ -145,7 +151,7 @@
         <div class="navigation__login-submit">
           <button class="navigation__btn_login" type="submit">Войти</button>
 
-          <div class="navigation__diverder-body">
+          <div class="navigation__divirder-body">
             <div class="navigation__devider"></div>
             <p class="navigation__devider-text">Хотите стать продавцом?</p>
             <div class="navigation__devider"></div>
@@ -280,7 +286,7 @@
         </div>
       </div>
       
-  </div>
+  </div> 
     <!-- end of submit -->
     <!-- Head ends here and starts the hero section -->
     
@@ -294,7 +300,6 @@
               src="/assets/icons/search-icon.svg"
               alt="search-icon"
             />
-            
             <input class="hero__input" onfocus="onFocus()" onfocusout="onFocusOut()" type="text" placeholder="Что вы ищите?" name="search"/>
             <button class="hero__btn">Поиск</button>
           </div>
@@ -309,8 +314,6 @@
             <!-- Product lists -->
             <div class="hero__product-list">
               <!-- Product 1 -->
-              <div class="hero__card-list">
-                <div class="hero__content-products">
                   <div class="hero__product">
                     <div class="hero__product-icon">
                       <img
@@ -329,49 +332,6 @@
                         />
                       </div>
                     </div>
-                  </div>
-                  
-                  <!-- <div class="hero__container">
-                  
-                    <a class="hero__dropdown-list" href="/page/product-list.html" target="_blank">
-                      <p class="hero__product-item">Смартфоны</p>
-                      <img src="/assets/icons/chevron-right-arrow.svg" alt="">
-                    </a>
-                    <a class="hero__dropdown-list" href="/page/product-list.html" target="_blank">
-                      <p class="hero__product-item">Смартфоны</p>
-                      <img src="/assets/icons/chevron-right-arrow.svg" alt="">
-                    </a>
-                    <a class="hero__dropdown-list" href="/page/product-list.html" target="_blank">
-                      <p class="hero__product-item">Смартфоны</p>
-                      <img src="/assets/icons/chevron-right-arrow.svg" alt="">
-                    </a>
-                    <a class="hero__dropdown-list" href="/page/product-list.html" target="_blank">
-                      <p class="hero__product-item">Смартфоны</p>
-                      <img src="/assets/icons/chevron-right-arrow.svg" alt="">
-                    </a>
-                    <a class="hero__dropdown-list" href="/page/product-list.html" target="_blank">
-                      <p class="hero__product-item">Смартфоны</p>
-                      <img src="/assets/icons/chevron-right-arrow.svg" alt="">
-                    </a>
-                    <a class="hero__dropdown-list" href="/page/product-list.html" target="_blank">
-                      <p class="hero__product-item">Смартфоны</p>
-                      <img src="/assets/icons/chevron-right-arrow.svg" alt="">
-                    </a>
-                    <a class="hero__dropdown-list" href="/page/product-list.html" target="_blank">
-                      <p class="hero__product-item">Смартфоны</p>
-                      <img src="/assets/icons/chevron-right-arrow.svg" alt="">
-                    </a>
-                    <a class="hero__dropdown-list" href="/page/product-list.html" target="_blank">
-                      <p class="hero__product-item">Смартфоны</p>
-                      <img src="/assets/icons/chevron-right-arrow.svg" alt="">
-                    </a>
-                    <a class="hero__dropdown-list" href="/page/product-list.html" target="_blank">
-                      <p class="hero__product-item">Смартфоны</p>
-                      <img src="/assets/icons/chevron-right-arrow.svg" alt="">
-                    </a>
-                  </div> -->
-                  
-                </div> 
               <!-- Product 2 -->
               <div class="hero__content-products">
                 <div class="hero__product">
@@ -815,13 +775,11 @@
           <div class="news__card-body">
             <!-- Card Num 1 -->
             <div class="news__content">
-              <div>
                 <img
                   class="news__img"
                   src="/assets/icons/news-image-1.png"
                   alt="image"
                 />
-              </div>
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -837,13 +795,11 @@
             </div>
             <!-- Card Num 2 -->
             <div class="news__content">
-              <div>
                 <img
                   class="news__img"
                   src="/assets/icons/news-image-2.png"
                   alt="image"
                 />
-              </div>
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -859,13 +815,11 @@
             </div>
             <!-- Card Num 3 -->
             <div class="news__content">
-              <div>
                 <img
                   class="news__img"
                   src="/assets/icons/news-image-3.png"
                   alt="image"
                 />
-              </div>
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -881,13 +835,11 @@
             </div>
             <!-- Card Num 4 -->
             <div class="news__content">
-              <div>
                 <img
                   class="news__img"
                   src="/assets/icons/news-image-4.png"
                   alt="image"
                 />
-              </div>
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -903,13 +855,11 @@
             </div>
             <!-- Card Num 5 -->
             <div class="news__content">
-              <div>
                 <img
                   class="news__img"
                   src="/assets/icons/news-image-5.png"
                   alt="image"
                 />
-              </div>
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -925,13 +875,11 @@
             </div>
             <!-- Card Num 6 -->
             <div class="news__content">
-              <div>
                 <img
                   class="news__img"
                   src="/assets/icons/news-image-6.png"
                   alt="image"
                 />
-              </div>
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -947,13 +895,11 @@
             </div>
             <!-- Card Num 7 -->
             <div class="news__content">
-              <div>
                 <img
                   class="news__img"
                   src="/assets/icons/news-image-7.png"
                   alt="image"
                 />
-              </div>
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -969,13 +915,11 @@
             </div>
             <!-- Card Num 8 -->
             <div class="news__content">
-              <div>
                 <img
                   class="news__img"
                   src="/assets/icons/news-image-8.png"
                   alt="image"
                 />
-              </div>
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -991,13 +935,11 @@
             </div>
             <!-- Card Num 9 -->
             <div class="news__content">
-              <div>
                 <img
                   class="news__img"
                   src="/assets/icons/news-image-1.png"
                   alt="image"
                 />
-              </div>
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -1013,13 +955,11 @@
             </div>
             <!-- Card Num 10 -->
             <div class="news__content">
-              <div>
                 <img
                   class="news__img"
                   src="/assets/icons/news-image-2.png"
                   alt="image"
                 />
-              </div>
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -1035,13 +975,11 @@
             </div>
             <!-- Card Num 11 -->
             <div class="news__content">
-              <div>
                 <img
                   class="news__img"
                   src="/assets/icons/news-image-3.png"
                   alt="image"
                 />
-              </div>
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -1057,13 +995,11 @@
             </div>
             <!-- Card Num 12 -->
             <div class="news__content">
-              <div>
                 <img
                   class="news__img"
                   src="/assets/icons/news-image-4.png"
                   alt="image"
                 />
-              </div>
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">

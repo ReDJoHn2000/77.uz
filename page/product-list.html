@@ -12,6 +12,8 @@
     />
     <link rel="shortcut icon" type="x-icon" href="/assets/icons/favicon.webp" />
     <link rel="stylesheet" href="/style/index.css" />
+    <link rel="stylesheet" href="/style/login-form.css" />
+    <link rel="stylesheet" href="/style/submit-form.css" />
     <link rel="stylesheet" href="/style/product-list.css" />
   </head>
   <body>
@@ -57,38 +59,248 @@
               </div>
             </div>
             <div class="navigation__contact-menu">
-              <a class="navigation__contact-number" href="#"
+              <a
+                class="navigation__contact-number"
+                href="https://+998-88-500-50-00"
+                target="_blank"
                 ><img src="/assets/icons/phone.svg" alt="phone logo" />+998 88
                 500 50 00</a
               >
             </div>
           </div>
           <div class="navigation__logo">
-            <a href="#"
-              ><img src="/assets/icons/logo.svg" alt="image of logo"
+            <a href="/index.html" target="_self"
+              ><img
+                class="navigation__img"
+                src="/assets/icons/logo.svg"
+                alt="image of logo"
             /></a>
           </div>
           <div class="navigation__right-menu">
             <div class="navigation__favourites">
-              <a class="navigation__favourites-menu" href="#"
-                ><img
-                  src="/assets/icons/heart.svg"
-                  alt="heart logo"
-                />Избранные</a
+              <a
+                class="navigation__favourites-icon"
+                href="/page/favourites.html"
+              >
+                <img src="/assets/icons/heart.svg" alt="heart logo" />
+              </a>
+              <a
+                class="navigation__favourites-menu"
+                href="/page/favourites.html"
+                target="_blank"
+              >
+                Избранные</a
               >
             </div>
             <div class="navigation__divider"></div>
-            <div class="navigation__login">
-              <button class="navigation__login-btn">
-                Войти
-                <img src="/assets/icons/login-icon.svg" alt="login logo" />
-              </button>
+            <div class="navigation__login-btn-icon">
+              <button class="navigation__login-btn">Войти</button>
+              <img
+                class="navigation__btn_login-img"
+                src="/assets/icons/login-icon.svg"
+                alt="login logo"
+              />
             </div>
           </div>
         </nav>
         <!-- End of the navigation -->
       </div>
     </header>
+    <!-- A popup login form  -->
+
+    <div class="navigation__form-container"></div>
+    <div class="navigation__popup">
+      <div class="navigation__login-form">
+        <div class="navigation__title-login">
+          <h1 class="navigation__title-h1">Добро пожаловать!</h1>
+          <button class="navigation__close-btn">
+            <img
+              src="/assets/login-form/close-btn-icon.svg"
+              alt="close-btn-icon"
+            />
+          </button>
+        </div>
+
+        <p class="navigation__title-discription">
+          Войти в систему чтобы торговать в системе
+        </p>
+
+        <div class="navigation__input">
+          <div class="navigation__input-login">
+            <label class="navigation__username-password" for="username"
+              ><b>Логин</b></label
+            >
+            <input
+              id="username"
+              class="navigation__input-usr-psw"
+              type="text"
+              placeholder="Введите логин"
+              name="username"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="navigation__input-login">
+            <label class="navigation__username-password" for="password"
+              ><b>Пароль</b></label
+            >
+            <input
+              id="password"
+              class="navigation__input-usr-psw"
+              type="password"
+              placeholder="Введите пароль"
+              name="password"
+              autocomplete="off"
+              required
+            />
+
+            <a class="navigation__forgot" href="#">Забыли пароль?</a>
+          </div>
+        </div>
+        <div class="navigation__login-submit">
+          <button class="navigation__btn_login" type="submit">Войти</button>
+
+          <div class="navigation__divirder-body">
+            <div class="navigation__devider"></div>
+            <p class="navigation__devider-text">Хотите стать продавцом?</p>
+            <div class="navigation__devider"></div>
+          </div>
+
+          <button class="navigation__btn_submit" type="submit">
+            Подать заявку
+          </button>
+        </div>
+      </div>
+      <!-- end of the login-from -->
+      <!-- A submit popup form -->
+      <div class="navigation__submit-form">
+        <div class="navigation__title-submit">
+          <h1 class="navigation__submit-h1">Подать заявку</h1>
+          <button class="navigation__close-btn-submit">
+            <img
+              src="/assets/login-form/close-btn-icon.svg"
+              alt="close-btn-icon"
+            />
+          </button>
+        </div>
+
+        <p class="navigation__title-discription-submit">
+          Войти в систему чтобы торговать в системе
+        </p>
+
+        <div class="navigation__input-submit">
+          <div class="navigation__input-login-submit">
+            <label class="navigation__username-password" for="name"
+              ><b>Ф.И.О.</b></label
+            >
+            <input
+              class="navigation__input-usr-psw"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Введите вашу Ф.И.О."
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="navigation__input-submit">
+            <label class="navigation__username-password" for="product-name"
+              ><b>Название продукта</b></label
+            >
+            <input
+              class="navigation__input-usr-psw"
+              id="product-name"
+              name="product-name"
+              type="text"
+              placeholder="Введите название продукта"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div class="navigation__input-submit">
+            <label class="navigation__username-password" for="product-name"
+              ><b>Категория</b></label
+            >
+            <select class="navigation__select" id="category" name="category">
+              <option value="" disabled selected hidden>
+                Выберите категорию
+              </option>
+              <option value="для женщин">Для женщин</option>
+              <option value="красота">Красота</option>
+              <option value="бытовая техника">Бытовая техника</option>
+              <option value="для мужчин">Для мужчин</option>
+              <option value="здоровье">Здоровье</option>
+              <option value="электроника">Электроника</option>
+              <option value="детские товары">Детские товары</option>
+              <option value="украшения и бижутерия">
+                Украшения и бижутерия
+              </option>
+              <option value="домашняя утварь">Домашняя утварь</option>
+              <option value="обувь">Обувь</option>
+              <option value="канцелярия">Канцелярия</option>
+              <option value="спорт и отдых">Спорт и отдых</option>
+              <option value="автотовары">Автотовары</option>
+              <option value="новые легковые автомобили">
+                Новые легковые автомобили
+              </option>
+              <option value="мототранспорт">Мототранспорт</option>
+              <option value="дача, сады и огороды">Дача, сады и огороды</option>
+              <option value="личная гигиена">Личная гигиена</option>
+              <option value="аксессуарлар">Аксессуарлар</option>
+              <option value="бытовая химия и личная гигиена">
+                Бытовая химия и личная гигиена
+              </option>
+              <option value="строительство и ремонт">
+                Строительство и ремонт
+              </option>
+              <option value="сумки и чемоданы">Сумки и чемоданы</option>
+            </select>
+          </div>
+
+          <div class="navigation__input-submit">
+            <label class="navigation__username-password" for="tel"
+              ><b>Телефон номер</b></label
+            >
+            <div class="navigation__prefix">
+              <span class="navigation__telephone">+998</span>
+              <input
+                class="navigation__input-num"
+                id="tel"
+                name="tel"
+                type="tel"
+                min="2.2"
+                max="11"
+                step="2.2"
+                placeholder="(__)___-__-__"
+                autocomplete="off"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div class="navigation__login-submit">
+          <button class="navigation__btn_sub-login" type="submit">
+            Продолжить
+          </button>
+
+          <div class="navigation__diverder-body">
+            <div class="navigation__devider-submit"></div>
+            <p class="navigation__devider-text-submit">
+              Если вы продавец, войдите на платформу
+            </p>
+            <div class="navigation__devider-submit"></div>
+          </div>
+
+          <button class="navigation__btn_sub-submit" type="submit">
+            Войти
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- end of submit -->
     <!-- Main section that contains filter-aside and main section part -->
     <div class="container">
       <section class="folders">
@@ -101,17 +313,224 @@
       <main>
         <aside class="filtration">
           <h2 class="filtration__title">Фильтр</h2>
-          <div>
-            <div><p>Регион</p></div>
-            <div><p>Район/город</p></div>
-            <div><p>Сртировать</p></div>
-            <div><p>Подкатегории</p></div>
+          <div class="filtration__checkboxes">
+            <div class="filtration__categories">
+              <p class="filtration__text">Регион</p>
+              <select class="filtration__selection" name="region" id="region">
+                <option value="" disabled selected hidden>
+                  Выберите Регион
+                </option>
+                <option value="tashkent">Ташкент</option>
+                <option value="republic_karakalpakistan">
+                  Республика Каракалпакстан
+                </option>
+                <option value="andijan">Андижанская область</option>
+                <option value="bukhara">Бухарская область</option>
+                <option value="jizzakh">Джизакская область</option>
+                <option value="kashkadarya">Кашкадарьинская область</option>
+                <option value="navai">Навоийская область</option>
+                <option value="namangan">Наманганская область</option>
+                <option value="samarqand">Самаркандская область</option>
+                <option value="surkhandarya">Сурхандарьинская область</option>
+                <option value="sirdarya">Сырдарьинская область</option>
+                <option value="tashkent_region">Ташкентская область</option>
+                <option value="fergana">Ферганская область</option>
+                <option value="khorezm">Хорезмская область</option>
+              </select>
+            </div>
+            <div class="filtration__categories">
+              <p class="filtration__text">Район/город</p>
+              <select
+                class="filtration__selection"
+                name="district/sity"
+                id="district/sity"
+              >
+                <option value="" disabled selected hidden>Все</option>
+              </select>
+            </div>
+            <div class="filtration__categories">
+              <p class="filtration__text">Сортировать</p>
+              <form action="">
+                <div class="filtration__group">
+                  <input
+                    class="filtration__input"
+                    type="checkbox"
+                    id="cheap_first"
+                    name="cheap_first"
+                    value="Cheap-products"
+                  />
+                  <label class="filtration__label" for="cheap_first">
+                    Дешёвые сперва
+                  </label>
+                </div>
+                <div class="checkbox_divider"></div>
+                <div class="filtration__group">
+                  <input
+                    class="filtration__input"
+                    type="checkbox"
+                    id="expensive_first"
+                    name="expensive_first"
+                    value="Expensive-products"
+                  />
+                  <label class="filtration__label" for="expensive_first">
+                    Дорогие сперва
+                  </label>
+                </div>
+                <div class="checkbox_divider"></div>
+                <div class="filtration__group">
+                  <input
+                    class="filtration__input"
+                    type="checkbox"
+                    id="new_first"
+                    name="new_first"
+                    value="New-products"
+                  />
+                  <label class="filtration__label" for="new_first">
+                    Новые сперва
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="filtration__categories">
+              <p class="filtration__text">Подкатегории</p>
+              <form action="">
+                <div class="filtration__group">
+                  <input
+                    class="filtration__input"
+                    type="checkbox"
+                    id="all-categories"
+                    name="all-categories"
+                    value="All-categories-products"
+                  />
+                  <label
+                    class="filtration__label-subcategories"
+                    for="all-categories"
+                  >
+                    Все разделы
+                  </label>
+                </div>
+                <div class="checkbox_divider"></div>
+                <div class="filtration__group">
+                  <input
+                    class="filtration__input"
+                    type="checkbox"
+                    id="parfume"
+                    name="parfume"
+                    value="parfume"
+                  />
+                  <label class="filtration__label-subcategories" for="parfume">
+                    Парфюмерия
+                  </label>
+                  <img
+                    class="filtration__categories-arrow"
+                    src="/assets/product-list/chevron-down-solid.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="checkbox_divider"></div>
+                <div class="filtration__group">
+                  <input
+                    class="filtration__input"
+                    type="checkbox"
+                    id="tech"
+                    name="tech"
+                    value="tech"
+                  />
+                  <label class="filtration__label-subcategories" for="tech">
+                    Ноутбуки и планшеты
+                  </label>
+                </div>
+                <div class="checkbox_divider"></div>
+                <div class="filtration__group">
+                  <input
+                    class="filtration__input"
+                    type="checkbox"
+                    id="face"
+                    name="face"
+                    value="face"
+                  />
+                  <label class="filtration__label-subcategories" for="face">
+                    Лицо
+                  </label>
+                </div>
+                <div class="checkbox_divider"></div>
+                <div class="filtration__group">
+                  <input
+                    class="filtration__input"
+                    type="checkbox"
+                    id="hygiene"
+                    name="hygiene"
+                    value="hygiene"
+                  />
+                  <label class="filtration__label-subcategories" for="hygiene">
+                    Тело и ванна
+                  </label>
+                </div>
+                <div class="checkbox_divider"></div>
+                <div class="filtration__group">
+                  <input
+                    class="filtration__input"
+                    type="checkbox"
+                    id="makeup"
+                    name="makeup"
+                    value="makeup"
+                  />
+                  <label class="filtration__label-subcategories" for="makeup">
+                    Макияж
+                  </label>
+                </div>
+                <div class="checkbox_divider"></div>
+                <div class="filtration__group">
+                  <input
+                    class="filtration__input"
+                    type="checkbox"
+                    id="men"
+                    name="men"
+                    value="men"
+                  />
+                  <label class="filtration__label-subcategories" for="men">
+                    Мужчинам
+                  </label>
+                </div>
+                <div class="checkbox_divider"></div>
+                <div class="filtration__group">
+                  <input
+                    class="filtration__input"
+                    type="checkbox"
+                    id="women"
+                    name="women"
+                    value="women"
+                  />
+                  <label class="filtration__label-subcategories" for="women">
+                    Женщинам
+                  </label>
+                </div>
+                <div class="checkbox_divider"></div>
+                <div class="filtration__group">
+                  <input
+                    class="filtration__input"
+                    type="checkbox"
+                    id="premium"
+                    name="premium"
+                    value="premium"
+                  />
+                  <label class="filtration__label-subcategories" for="premium">
+                    Премиум
+                  </label>
+                </div>
+              </form>
+            </div>
           </div>
-          <button>Применить фильтр</button>
+          <button class="filtration__btn">Применить фильтр</button>
         </aside>
         <section class="product-list">
           <h1 class="product-list__title">Ноутбуки и планшеты</h1>
           <div class="product-list__navigation-icon">
+            <img
+              class="product-list__icon"
+              src="/assets/product-list/product-list-icon.webp"
+              alt="list-icon"
+            />
             <img src="/assets/product-list/list-icon.svg" alt="list-icon" />
             <img src="/assets/product-list/main-icon.svg" alt="main-icon" />
           </div>
@@ -119,13 +538,11 @@
           <div class="product-list__list">
             <!-- First card -->
             <div class="news__content">
-              <div>
-                <img
-                  class="news__img"
-                  src="/assets/icons/news-image-1.png"
-                  alt="image"
-                />
-              </div>
+              <img
+                class="news__img"
+                src="/assets/icons/news-image-1.png"
+                alt="image"
+              />
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -143,13 +560,11 @@
             </div>
             <!-- 2 card -->
             <div class="news__content">
-              <div>
-                <img
-                  class="news__img"
-                  src="/assets/icons/news-image-2.png"
-                  alt="image"
-                />
-              </div>
+              <img
+                class="news__img"
+                src="/assets/icons/news-image-2.png"
+                alt="image"
+              />
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -167,13 +582,11 @@
             </div>
             <!-- Card Num 3 -->
             <div class="news__content">
-              <div>
-                <img
-                  class="news__img"
-                  src="/assets/icons/news-image-3.png"
-                  alt="image"
-                />
-              </div>
+              <img
+                class="news__img"
+                src="/assets/icons/news-image-3.png"
+                alt="image"
+              />
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -191,13 +604,11 @@
             </div>
             <!-- Card Num 4 -->
             <div class="news__content">
-              <div>
-                <img
-                  class="news__img"
-                  src="/assets/icons/news-image-4.png"
-                  alt="image"
-                />
-              </div>
+              <img
+                class="news__img"
+                src="/assets/icons/news-image-4.png"
+                alt="image"
+              />
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -215,13 +626,11 @@
             </div>
             <!-- Card Num 5 -->
             <div class="news__content">
-              <div>
-                <img
-                  class="news__img"
-                  src="/assets/icons/news-image-5.png"
-                  alt="image"
-                />
-              </div>
+              <img
+                class="news__img"
+                src="/assets/icons/news-image-5.png"
+                alt="image"
+              />
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -239,13 +648,11 @@
             </div>
             <!-- Card Num 6 -->
             <div class="news__content">
-              <div>
-                <img
-                  class="news__img"
-                  src="/assets/icons/news-image-6.png"
-                  alt="image"
-                />
-              </div>
+              <img
+                class="news__img"
+                src="/assets/icons/news-image-6.png"
+                alt="image"
+              />
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -263,13 +670,11 @@
             </div>
             <!-- Card Num 7 -->
             <div class="news__content">
-              <div>
-                <img
-                  class="news__img"
-                  src="/assets/icons/news-image-7.png"
-                  alt="image"
-                />
-              </div>
+              <img
+                class="news__img"
+                src="/assets/icons/news-image-7.png"
+                alt="image"
+              />
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -287,13 +692,11 @@
             </div>
             <!-- Card Num 8 -->
             <div class="news__content">
-              <div>
-                <img
-                  class="news__img"
-                  src="/assets/icons/news-image-8.png"
-                  alt="image"
-                />
-              </div>
+              <img
+                class="news__img"
+                src="/assets/icons/news-image-8.png"
+                alt="image"
+              />
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -311,13 +714,11 @@
             </div>
             <!-- Card Num 9 -->
             <div class="news__content">
-              <div>
-                <img
-                  class="news__img"
-                  src="/assets/icons/news-image-1.png"
-                  alt="image"
-                />
-              </div>
+              <img
+                class="news__img"
+                src="/assets/icons/news-image-1.png"
+                alt="image"
+              />
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -335,13 +736,11 @@
             </div>
             <!-- Card Num 10 -->
             <div class="news__content">
-              <div>
-                <img
-                  class="news__img"
-                  src="/assets/icons/news-image-2.png"
-                  alt="image"
-                />
-              </div>
+              <img
+                class="news__img"
+                src="/assets/icons/news-image-2.png"
+                alt="image"
+              />
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -359,13 +758,11 @@
             </div>
             <!-- Card Num 11 -->
             <div class="news__content">
-              <div>
-                <img
-                  class="news__img"
-                  src="/assets/icons/news-image-3.png"
-                  alt="image"
-                />
-              </div>
+              <img
+                class="news__img"
+                src="/assets/icons/news-image-3.png"
+                alt="image"
+              />
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -383,13 +780,11 @@
             </div>
             <!-- Card Num 12 -->
             <div class="news__content">
-              <div>
-                <img
-                  class="news__img"
-                  src="/assets/icons/news-image-4.png"
-                  alt="image"
-                />
-              </div>
+              <img
+                class="news__img"
+                src="/assets/icons/news-image-4.png"
+                alt="image"
+              />
               <div class="news__img-desrc">
                 <div class="news__location">г. Ташкент</div>
                 <div class="news__owner-info">
@@ -413,11 +808,13 @@
     <footer class="footer">
       <div class="footer__content">
         <div class="footer__icon">
-          <img
-            class="footer__icon-img"
-            src="/assets/icons/logo.svg"
-            alt="company logo"
-          />
+          <a href="/index.html" target="_self">
+            <img
+              class="footer__icon-img"
+              src="/assets/icons/logo.svg"
+              alt="company logo"
+            />
+          </a>
         </div>
         <h3 class="footer__content-discription">
           Тот 77.uz marketplace - это виртуальная платформа в Узбекистане,
@@ -425,40 +822,46 @@
           потенциальными клиентами.
         </h3>
         <div class="footer__company-services">
-          <div class="footer__service">
-            <img src="/assets/icons/footer-symbol.svg" alt="symbol" />Доска
-            объявлений
-          </div>
-          <div class="footer__service">
-            <img src="/assets/icons/footer-symbol.svg" alt="symbol" />Условия
-            пользования
-          </div>
-          <div class="footer__service">
-            <img src="/assets/icons/footer-symbol.svg" alt="symbol" />+998 88
-            500 50 00
-          </div>
+          <a class="footer__service" href="#" target="_blank"
+            ><img src="/assets/icons/footer-symbol.svg" alt="symbol" />Доска
+            объявлений</a
+          >
+          <a class="footer__service" href="/page/license.html" target="_blank"
+            ><img src="/assets/icons/footer-symbol.svg" alt="symbol" />Условия
+            пользования</a
+          >
+          <a class="footer__service" href="#" target="_blank "
+            ><img src="/assets/icons/footer-symbol.svg" alt="symbol" />+998 88
+            500 50 00</a
+          >
         </div>
         <div class="footer__footer-line">
           <div class="footer__footer-line-left">
             <div class="footer__text">© 77.uz</div>
-            <div class="footer__text">2023. Все права защищены</div>
+            <a href="/page/license.html" class="footer__text" target="_blank"
+              >2023. Все права защищены</a
+            >
           </div>
-          <div class="footer__footer-line-left">
-            <div>
-              <img
+          <div class="footer__footer-line-right">
+            <a href="https://uic.group/" target="_blank"
+              ><img
                 src="/assets/icons/footer-group-icon.svg"
                 alt="company group icon"
-              />
-            </div>
-            <div>
-              <img
+            /></a>
+            <a
+              href="https://uic.group/"
+              class="footer__group-icon"
+              target="_blank"
+              ><img
                 src="/assets/icons/footer-group-icon2.svg"
                 alt="company group icon"
-              />
-            </div>
+            /></a>
           </div>
         </div>
       </div>
     </footer>
+    <script src="/main/main.js"></script>
+    <script src="/main/product-list.js"></script>
+    <script src="/main/search-bar.js"></script>
   </body>
 </html>
